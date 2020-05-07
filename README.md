@@ -47,6 +47,6 @@ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Do
 
 Give Permission to access network and access
 
-kubectl taint nodes  mildevkub020 node-role.kubernetes.io/master-
+kubectl taint nodes  kmaster node-role.kubernetes.io/master-
 
 kubectl apply -f rbac.yml
