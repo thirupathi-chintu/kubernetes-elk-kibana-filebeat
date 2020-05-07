@@ -5,9 +5,9 @@ metadata:
 spec:
   containers:
   - name: count
-    image: busybox
+    image: python:3
     args:
-    - /bin/python
+    - python
     - -c
     - >
       #!/usr/bin/python3
