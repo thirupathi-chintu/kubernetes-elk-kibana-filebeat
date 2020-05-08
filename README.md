@@ -50,3 +50,5 @@ Give Permission to access network and access
 kubectl taint nodes  kmaster node-role.kubernetes.io/master-
 
 kubectl apply -f rbac.yml
+
+refer:-  https://www.magalix.com/blog/kubernetes-observability-log-aggregation-using-elk-stack
