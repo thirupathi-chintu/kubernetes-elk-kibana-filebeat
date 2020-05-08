@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: python-test
+  labels:
+    app: python-test
+spec:
+  containers:
+  - name: python-test
+    image: thirupathip/python-hello
+    ports:
+    - containerPort: 8080
