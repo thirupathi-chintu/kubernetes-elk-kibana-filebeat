@@ -1,24 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: counter
-data:
-  hello.py: |
-    import time, datetime
-      startTime = datetime.datetime(2029, 10, 31, 0, 0, 0)
-      while datetime.datetime.now() < startTime:
-           print(startTime)
-           time.sleep(1)
+  name: python-test
+  labels:
+    app: python-test
 spec:
   containers:
-  - name: count
-    image: python:3
-    args:
-    - python
-    - hello.py
-    volumeMounts:
-    - name: varlog
-      mountPath: /var/log
-  volumes:
-  - name: varlog
-    emptyDir: {}
+  - name: python-test
+    image: thirupathip/python-hello
+    ports:
+    - containerPort: 8080
