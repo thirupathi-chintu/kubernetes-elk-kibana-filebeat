@@ -52,3 +52,4 @@ kubectl taint nodes  kmaster node-role.kubernetes.io/master-
 kubectl apply -f rbac.yml
 
 refer:-  https://www.magalix.com/blog/kubernetes-observability-log-aggregation-using-elk-stack
+         https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04
